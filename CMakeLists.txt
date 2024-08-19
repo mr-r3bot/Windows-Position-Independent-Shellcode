@@ -21,7 +21,7 @@ set (SOURCE_FILES
         src/Util/Util.c
         src/pic.asm
 )
-# No linker scrript yet
+# CFFLAGS
 set(CFLAGS "-Os -fno-asynchronous-unwind-tables -nostdlib \
 -fno-ident -fpack-struct=8 -falign-functions=1 \
 -s -ffunction-sections -falign-jumps=1 -w \
@@ -35,6 +35,6 @@ set(CFLAGS "-Os -fno-asynchronous-unwind-tables -nostdlib \
 set(CMAKE_C_FLAGS  ${CFLAGS})
 
 # Building
-add_executable(Windows_PIC ${SOURCE_FILES} ${CMAKE_LIBRARY_OUTPUT_DIRECTORY})
+add_executable(Windows_PIC ${SOURCE_FILES})
 target_include_directories(Windows_PIC PUBLIC "/include"
         PUBLIC "/src/*")
