@@ -9,6 +9,8 @@ cmake --build <output_dir> --target Windows_PIC -j 14
 python scripts/extract.py -f <Windows_PIC.exe> -o output.bin
 ```
 
+![image](https://github.com/user-attachments/assets/148aa452-96f2-475c-9434-95db625d7804)
+
 ### Validate shellcode
 
 ```
