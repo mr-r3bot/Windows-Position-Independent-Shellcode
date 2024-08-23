@@ -8,7 +8,7 @@
 #include "../../include/Common.h"
 
 
-inline __attribute__((always_inline)) HMODULE GetModuleHandleH(IN UINT32 uModuleHash) {
+HMODULE GetModuleHandleH(IN UINT32 uModuleHash) {
 	PPEB                    pPeb = NULL;
 	PPEB_LDR_DATA           pLdr = NULL;
 	PLDR_DATA_TABLE_ENTRY   pDte = NULL;
